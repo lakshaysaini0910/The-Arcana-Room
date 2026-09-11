@@ -1,0 +1,279 @@
+.navbar {
+    height: 72px;
+    padding: 0 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background:
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(120, 50, 180, 0.18),
+            transparent 30%
+        ),
+        #100b1c;
+
+    border-bottom: 1px solid rgba(197, 140, 255, 0.2);
+
+    color: white;
+
+    position: relative;
+    /* z-index: 100; */
+}
+
+.navLogo {
+    color: white;
+    text-decoration: none;
+
+    font-size: 21px;
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+    transition: 0.3s;
+}
+
+.navLogo::before {
+    content: "✦";
+
+    color: #c58cff;
+
+    margin-right: 10px;
+
+    text-shadow:
+        0 0 12px rgba(197, 140, 255, 0.8);
+}
+
+.navLogo:hover {
+    color: #c58cff;
+}
+
+.desktopNav {
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+}
+
+.desktopNav a {
+    color: #bdb5c9;
+
+    text-decoration: none;
+
+    padding: 12px 18px;
+
+    border-radius: 10px;
+
+    font-size: 13px;
+
+    letter-spacing: 1.5px;
+
+    transition: 0.3s;
+}
+
+.desktopNav a:hover {
+    color: #c58cff;
+
+    background: rgba(197, 140, 255, 0.08);
+}
+
+.desktopNav a::before {
+    content: "✦";
+
+    color: #c58cff;
+
+    margin-right: 7px;
+
+    opacity: 0;
+
+    transition: 0.3s;
+}
+
+.desktopNav a:hover::before {
+    opacity: 1;
+}
+
+.menuButton {
+    display: none;
+
+    border: 1px solid rgba(197, 140, 255, 0.2);
+
+    background: rgba(197, 140, 255, 0.08);
+
+    color: white;
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 12px;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.menuButton:hover {
+    background: rgba(197, 140, 255, 0.18);
+}
+
+.mobileSidebar {
+    position: fixed;
+
+    top: 0;
+    right: 0;
+
+    width: 300px;
+    height: 100vh;
+
+    padding: 25px;
+
+    box-sizing: border-box;
+
+    background:
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(120, 50, 180, 0.2),
+            transparent 30%
+        ),
+        #100b1c;
+
+    border-left: 1px solid rgba(197, 140, 255, 0.2);
+
+    /* z-index: 1000; */
+
+    transform: translateX(100%);
+
+    transition: transform 0.35s ease;
+}
+
+.mobileSidebar.open {
+    transform: translateX(0);
+}
+
+.sidebarOverlay {
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.6);
+
+    /* z-index: 999; */
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.3s;
+}
+
+.sidebarOverlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sidebarHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-bottom: 25px;
+
+    border-bottom: 1px solid rgba(197, 140, 255, 0.15);
+}
+
+.sidebarHeader span {
+    color: #c58cff;
+
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+
+.sidebarHeader button {
+    border: none;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 32px;
+
+    cursor: pointer;
+}
+
+.sidebarLinks {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 35px;
+}
+
+.sidebarLinks a {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 18px 5px;
+
+    color: #ddd7e8;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    letter-spacing: 2px;
+
+    border-bottom: 1px solid rgba(197, 140, 255, 0.08);
+
+    transition: 0.3s;
+}
+
+.sidebarLinks a span {
+    color: #c58cff;
+
+    font-size: 18px;
+}
+
+.sidebarLinks a:hover {
+    color: #c58cff;
+
+    padding-left: 12px;
+}
+
+.sidebarFooter {
+    position: absolute;
+
+    bottom: 30px;
+    left: 25px;
+
+    color: #625b6d;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+}
+
+@media (max-width: 700px) {
+
+    .navbar {
+        height: 65px;
+
+        padding: 0 18px;
+    }
+
+    .navLogo {
+        font-size: 17px;
+
+        letter-spacing: 2px;
+    }
+
+    .desktopNav {
+        display: none;
+    }
+
+    .menuButton {
+        display: block;
+    }
+}

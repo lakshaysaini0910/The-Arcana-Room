@@ -1,0 +1,245 @@
+.aboutPage {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    padding: 35px 7%;
+}
+
+.aboutS1,
+.aboutS2,
+.aboutS3 {
+    width: 100%;
+
+    background:
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(120, 50, 180, 0.15),
+            transparent 35%
+        ),
+        #100b1c;
+
+    border: 1px solid rgba(197, 140, 255, 0.15);
+    border-radius: 25px;
+
+    box-shadow:
+        0 15px 50px rgba(0, 0, 0, 0.35);
+}
+
+.aboutContainer {
+    width: 90%;
+    max-width: 1000px;
+
+    margin: auto;
+    padding: 55px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutTag {
+    color: #c58cff;
+
+    font-size: 12px;
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+}
+
+.aboutH {
+    margin: 0;
+
+    color: white;
+
+    font-size: clamp(40px, 5vw, 60px);
+    line-height: 1;
+
+    letter-spacing: 4px;
+}
+
+.aboutS1 p {
+    max-width: 800px;
+
+    margin: 25px 0 0;
+
+    color: #bdb5c9;
+
+    font-size: 17px;
+    line-height: 1.8;
+
+    text-align: center;
+}
+
+.aboutS2H,
+.aboutS3H {
+    margin: 0 0 40px;
+
+    color: #c58cff;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    letter-spacing: 4px;
+}
+
+.aboutS2Content {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 25px;
+}
+
+.aboutFeature {
+    display: flex;
+    gap: 22px;
+
+    padding: 25px;
+
+    background: rgba(197, 140, 255, 0.04);
+
+    border: 1px solid rgba(197, 140, 255, 0.1);
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+.aboutFeature:hover {
+    transform: translateY(-3px);
+
+    background: rgba(197, 140, 255, 0.07);
+
+    border-color: rgba(197, 140, 255, 0.2);
+}
+
+.aboutFeatureIcon {
+    flex-shrink: 0;
+
+    color: #c58cff;
+
+    font-size: 24px;
+
+    text-shadow:
+        0 0 15px rgba(197, 140, 255, 0.6);
+}
+
+.aboutS2SubH {
+    margin: 0 0 10px;
+
+    color: white;
+
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.aboutS2Content p {
+    margin: 0;
+
+    color: #aaa3b7;
+
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.aboutS3Content {
+    max-width: 800px;
+
+    margin-bottom: 30px;
+
+    color: #aaa3b7;
+
+    font-size: 16px;
+    line-height: 1.8;
+
+    text-align: center;
+}
+
+.aboutS3Content strong {
+    color: #c58cff;
+}
+
+.aboutS3Points {
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.aboutS3Points li {
+    padding: 20px 25px;
+
+    color: #aaa3b7;
+
+    font-size: 15px;
+    line-height: 1.7;
+
+    background: rgba(197, 140, 255, 0.04);
+
+    border-left: 2px solid rgba(197, 140, 255, 0.35);
+
+    border-radius: 0 12px 12px 0;
+}
+
+.aboutS3Points strong {
+    color: #c58cff;
+}
+
+@media (max-width: 700px) {
+
+    .aboutPage {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .aboutContainer {
+        width: 85%;
+        padding: 40px 0;
+    }
+
+    .aboutH {
+        font-size: 40px;
+    }
+
+    .aboutS1 p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .aboutS2H,
+    .aboutS3H {
+        font-size: 15px;
+        letter-spacing: 3px;
+        margin-bottom: 30px;
+    }
+
+    .aboutFeature {
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .aboutFeatureIcon {
+        font-size: 20px;
+    }
+
+    .aboutS2SubH {
+        font-size: 16px;
+    }
+
+    .aboutS2Content p,
+    .aboutS3Points li {
+        font-size: 14px;
+    }
+
+    .aboutS3Content {
+        font-size: 14px;
+    }
+}

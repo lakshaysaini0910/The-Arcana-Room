@@ -1,0 +1,63 @@
+/* body {
+    margin: 0;
+    background: #080612;
+}
+
+.homePage {
+    min-height: 100vh;
+    padding: 20px;
+
+    background:
+        radial-gradient(circle at 15% 20%, rgba(120, 50, 180, 0.2), transparent 25%),
+        radial-gradient(circle at 85% 30%, rgba(70, 50, 180, 0.2), transparent 25%),
+        radial-gradient(circle at 50% 100%, rgba(100, 40, 160, 0.18), transparent 35%),
+        radial-gradient(circle, rgba(255, 255, 255, 0.55) 1px, transparent 1px),
+        #080612;
+
+    
+
+    color: white;
+
+    overflow: hidden;
+
+}
+
+.homePage::before {
+    content: "";
+
+    position: absolute;
+
+    width: 750px;
+    height: 750px;
+
+    left: 50%;
+    top: 55%;
+
+    transform: translate(-50%, -50%);
+
+    border: 1px solid rgba(170, 100, 220, 0.12);
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 0 40px rgba(170, 100, 220, 0.025),
+        0 0 0 80px rgba(170, 100, 220, 0.025);
+
+    pointer-events: none;
+}
+
+.homePage > * {
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 700px) {
+    .homePage {
+        padding: 10px;
+    }
+
+    .homePage::before {
+        width: 500px;
+        height: 500px;
+    }
+} */

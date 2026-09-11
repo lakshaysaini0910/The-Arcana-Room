@@ -1,0 +1,289 @@
+.deckSelection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 35px 7%;
+    padding: 45px 0;
+
+    background:
+        radial-gradient(
+            circle at 80% 10%,
+            rgba(120, 50, 180, 0.18),
+            transparent 35%
+        ),
+        #100b1c;
+
+    border: 1px solid rgba(197, 140, 255, 0.15);
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.libraryHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 0 20px;
+}
+
+.libraryTag {
+    color: #c58cff;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+}
+
+.libraryH {
+    margin: 0;
+
+    color: white;
+
+    font-size: clamp(38px, 5vw, 55px);
+
+    letter-spacing: 3px;
+}
+
+.libraryIntro {
+    max-width: 600px;
+
+    margin: 20px 0 40px;
+
+    color: #aaa3b7;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+.riderWaiteSection {
+    width: 85%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 25px;
+
+    box-sizing: border-box;
+
+    background: rgba(197, 140, 255, 0.04);
+
+    border: 1px solid rgba(197, 140, 255, 0.12);
+
+    border-radius: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.riderWaiteSection:hover {
+    background: rgba(197, 140, 255, 0.08);
+
+    border-color: rgba(197, 140, 255, 0.25);
+}
+
+.deckLabel {
+    display: block;
+
+    color: #c58cff;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+}
+
+.deckH {
+    color: #ddd7e8;
+
+    font-size: 17px;
+
+    font-weight: 600;
+}
+
+.arrowBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+
+    border: 1px solid rgba(197, 140, 255, 0.15);
+
+    border-radius: 10px;
+
+    background: rgba(197, 140, 255, 0.06);
+
+    color: #c58cff;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.arrowBtn:hover {
+    background: rgba(197, 140, 255, 0.15);
+}
+
+.cardsImage {
+    width: 85%;
+
+    margin-top: 30px;
+
+    padding: 30px;
+
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+
+    gap: 25px;
+
+    background: rgba(197, 140, 255, 0.03);
+
+    border: 1px solid rgba(197, 140, 255, 0.08);
+
+    border-radius: 15px;
+}
+
+.cardTag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 10px;
+
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.cardTag:hover {
+    background: rgba(197, 140, 255, 0.06);
+
+    transform: translateY(-5px);
+}
+
+.cardsImage img {
+    width: 100%;
+    max-width: 140px;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.5);
+
+    transition: 0.3s;
+}
+
+.cardTag:hover img {
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.7),
+        0 0 15px rgba(197, 140, 255, 0.15);
+}
+
+.cardTag p {
+    margin: 0;
+
+    color: #aaa3b7;
+
+    font-size: 12px;
+
+    line-height: 1.4;
+
+    text-align: center;
+}
+
+.cardTag:hover p {
+    color: #c58cff;
+}
+
+.libraryMessage {
+    min-height: 60vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+
+    color: #c58cff;
+
+    font-size: 20px;
+}
+
+@media (max-width: 700px) {
+
+    .deckSelection {
+        margin: 20px;
+
+        padding: 35px 0;
+
+        border-radius: 20px;
+    }
+
+    .libraryH {
+        font-size: 38px;
+    }
+
+    .libraryIntro {
+        font-size: 14px;
+
+        margin-bottom: 30px;
+    }
+
+    .riderWaiteSection {
+        width: 85%;
+
+        padding: 16px 18px;
+    }
+
+    .deckH {
+        font-size: 14px;
+    }
+
+    .deckLabel {
+        font-size: 9px;
+    }
+
+    .arrowBtn {
+        width: 35px;
+        height: 35px;
+
+        font-size: 12px;
+    }
+
+    .cardsImage {
+        width: 85%;
+
+        padding: 15px;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 15px;
+    }
+
+    .cardsImage img {
+        max-width: 120px;
+    }
+
+    .cardTag p {
+        font-size: 10px;
+    }
+}

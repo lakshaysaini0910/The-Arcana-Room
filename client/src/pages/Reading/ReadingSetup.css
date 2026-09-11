@@ -1,0 +1,185 @@
+.readingSetupPage {
+    min-height: calc(100vh - 72px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px 7%;
+}
+
+.readingSetupCard {
+    width: 100%;
+    max-width: 650px;
+
+    padding: 55px 60px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background:
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(120, 50, 180, 0.2),
+            transparent 35%
+        ),
+        #100b1c;
+
+    border: 1px solid rgba(197, 140, 255, 0.18);
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.45);
+}
+
+.readingSetupTag {
+    color: #c58cff;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+}
+
+.readingSetupHeading {
+    margin: 0;
+
+    color: white;
+
+    font-size: clamp(35px, 5vw, 52px);
+
+    text-align: center;
+
+    line-height: 1.1;
+}
+
+.readingSetupText {
+    max-width: 450px;
+
+    margin: 20px 0 35px;
+
+    color: #aaa3b7;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    text-align: center;
+}
+
+.readingSetupForm {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.readingSetupForm label {
+    margin: 15px 0 8px;
+
+    color: #c58cff;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+}
+
+.readingSetupForm select {
+    width: 100%;
+
+    padding: 14px 16px;
+
+    border: 1px solid rgba(197, 140, 255, 0.2);
+
+    border-radius: 10px;
+
+    outline: none;
+
+    background: #171020;
+
+    color: #ddd7e8;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.readingSetupForm select:hover,
+.readingSetupForm select:focus {
+    border-color: rgba(197, 140, 255, 0.5);
+
+    background: #1c1428;
+}
+
+.readingSetupForm select option {
+    background: #171020;
+
+    color: white;
+}
+
+.readingSetupButton {
+    width: 100%;
+
+    margin-top: 30px;
+
+    padding: 14px 20px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: #8d45c7;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.readingSetupButton:hover {
+    transform: translateY(-3px);
+
+    background: #a75cde;
+
+    box-shadow:
+        0 10px 30px rgba(167, 92, 222, 0.35);
+}
+
+@media (max-width: 700px) {
+
+    .readingSetupPage {
+        min-height: calc(100vh - 65px);
+
+        padding: 30px 20px;
+    }
+
+    .readingSetupCard {
+        padding: 40px 25px;
+
+        border-radius: 20px;
+    }
+
+    .readingSetupHeading {
+        font-size: 38px;
+    }
+
+    .readingSetupText {
+        font-size: 14px;
+
+        margin-bottom: 25px;
+    }
+
+    .readingSetupForm select {
+        padding: 13px;
+    }
+}

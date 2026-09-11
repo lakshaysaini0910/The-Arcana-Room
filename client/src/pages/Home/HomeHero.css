@@ -1,0 +1,215 @@
+
+.homeHero {
+    min-height: 55vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 45px 7%;
+
+    border-radius: 30px;
+
+    background:
+        radial-gradient(
+            circle at 80% 50%,
+            rgba(120, 50, 180, 0.35),
+            transparent 30%
+        ),
+        linear-gradient(
+            120deg,
+            #13051c,
+            #171b42
+        );
+
+    overflow: hidden;
+}
+
+
+
+.homeHeroText {
+    max-width: 550px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.homeHeroTag {
+    color: #c99cff;
+
+    font-size: 14px;
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+}
+
+
+.homeHeroText h1 {
+    font-size: clamp(40px, 5vw, 65px);
+
+    line-height: 1.05;
+
+    margin: 0;
+
+    color: white;
+}
+
+
+.homeHeroText h1 span {
+    display: block;
+
+    color: #c58cff;
+}
+
+
+.homeHeroText p {
+    max-width: 470px;
+
+    color: #c8c4d0;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+
+    margin: 22px 0;
+}
+
+
+
+
+.homeHeroText a {
+    text-decoration: none;
+}
+
+
+.homeHeroButton {
+    border: none;
+
+    background: #8d45c7;
+    color: white;
+
+    padding: 13px 26px;
+
+    border-radius: 30px;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.homeHeroButton:hover {
+    transform: translateY(-3px);
+
+    background: #a75cde;
+
+    box-shadow:
+        0 10px 30px rgba(167, 92, 222, 0.35);
+}
+
+
+
+
+.homeHeroCard {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.homeHeroCard img {
+    width: 220px;
+
+    position: relative;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.6);
+
+    transform: rotate(6deg);
+
+    transition: 0.4s;
+}
+
+
+.homeHeroCard img:hover {
+    transform: rotate(0deg) scale(1.05);
+}
+
+
+/* =========================
+   CARD GLOW
+========================= */
+
+.homeHeroGlow {
+    position: absolute;
+    display: flex;
+
+    width: 250px;
+    height: 250px;
+
+
+    background: inherit;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .homeHero {
+        min-height: 80vh;
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 45px 25px;
+    }
+
+
+    .homeHeroText {
+        align-items: center;
+    }
+
+
+    .homeHeroText h1 {
+        font-size: 42px;
+    }
+
+
+    .homeHeroText p {
+        font-size: 15px;
+    }
+
+
+    .homeHeroCard {
+        margin-top: 35px;
+    }
+
+
+    .homeHeroCard img {
+        width: 180px;
+    }
+
+
+    .homeHeroGlow {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.homePage {
+    min-height: 100vh;
+    padding: 20px;
+}

@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    min-height: 100%;
+}
+
+body {
+    background:
+        radial-gradient(circle at 15% 20%, rgba(120, 50, 180, 0.2), transparent 25%),
+        radial-gradient(circle at 85% 30%, rgba(70, 50, 180, 0.2), transparent 25%),
+        radial-gradient(circle at 50% 100%, rgba(100, 40, 160, 0.18), transparent 35%),
+        radial-gradient(circle, rgba(255, 255, 255, 0.55) 1px, transparent 1px),
+        #080612;
+
+    
+
+    color: white;
+    /* overflow-x: hidden */
+}
+
+#root {
+    min-height: 100vh;
+}
