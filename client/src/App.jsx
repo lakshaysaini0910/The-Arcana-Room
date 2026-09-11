@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import './App.css'
 import Navbar from './components/Navbar'
-import Home from './pages/Home/home';
+import Home from './pages/Home/Home';
 import CardsLibrary from './pages/CardsLibrary/CardsLibrary';
 import ReadingSetup from './pages/Reading/ReadingSetup';
 import ReadingMain from './pages/Reading/ReadingMain';
